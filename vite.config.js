@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/NewsWatch-Mobile-App/',
   build: {
-    outDir: '/dist',
+    outDir: 'dist',
   },
 })
