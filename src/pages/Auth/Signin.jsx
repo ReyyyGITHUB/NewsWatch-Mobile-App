@@ -6,7 +6,7 @@ export default function Signin() {
       <div className="w-full max-w-md flex flex-col items-center gap-8 ">
         {/* Logo Section */}
         <div className="flex w-52 justify-center items-center mb-[80px]">
-          <img src="src/assets/NewsWatch.png" alt="NewsWatch Logo" />
+          <img src="/assets/NewsWatch.png" alt="NewsWatch Logo" />
         </div>
 
         {/* Form Section */}
@@ -62,7 +62,7 @@ export default function Signin() {
             <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors">
               <div className="mb-1">
                 <img
-                  src="src/assets/google-logo.png"
+                  src="/assets/google-logo.png"
                   alt="Google"
                   className="w-6 h-6"
                 />
@@ -73,7 +73,7 @@ export default function Signin() {
             <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors">
               <div className="mb-1">
                 <img
-                  src="src/assets/facebook-logo.png"
+                  src="/assets/facebook-logo.png"
                   alt="Facebook"
                   className="w-6 h-6"
                 />
@@ -84,7 +84,7 @@ export default function Signin() {
             <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors">
               <div className="mb-1">
                 <img
-                  src="src/assets/twitter-logo.png"
+                  src="/assets/twitter-logo.png"
                   alt="Twitter"
                   className="w-6 h-6"
                 />
