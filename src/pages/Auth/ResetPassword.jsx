@@ -2,48 +2,48 @@ import { Link } from "react-router-dom";
 
 export default function ResetPassword() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-12">
-      <div className="w-full max-w-md flex flex-col items-center gap-8">
+    <div className="min-h-screen flex items-center justify-center px-4 py-6">
+      <div className="w-full max-w-md flex flex-col items-center gap-6">
         {/* Logo Section */}
-        <div className="flex w-52 justify-center items-center mb-[80px]">
-          <img src="/assets/NewsWatch.png" alt="NewsWatch Logo" />
+        <div className="flex w-44 justify-center items-center mb-12">
+          <img src="/assets/NewsWatch.png" alt="NewsWatch Logo" className="w-full h-auto" />
         </div>
 
         {/* Email Input Section */}
         <div className="flex flex-col w-full">
-          <label className="text-base text-gray-500 text-left mb-4">
+          <label className="text-base text-gray-500 text-left mb-3">
             Enter your email
           </label>
           <input
             type="email"
             placeholder="Email"
-            className="border-b border-gray-300 w-full py-3 focus:outline-none focus:border-blue-500 transition-colors"
+            className="border-b border-gray-300 w-full py-3 focus:outline-none focus:border-blue-500 transition-colors text-base pb-3"
           />
-          <button className="self-end bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white px-4 py-1 rounded-full mt-8 transition-colors">
+          <button className="self-end bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white px-4 py-2 rounded-full mt-6 transition-colors text-sm active:scale-95">
             Get OTP
           </button>
         </div>
 
         {/* Verification Code Section */}
         <div className="flex flex-col w-full">
-          <label className="text-base text-gray-500 text-left mb-4">
+          <label className="text-base text-gray-500 text-left mb-3">
             Verification Code
           </label>
           <input
-            type="password"
+            type="text"
             placeholder="Code"
-            className="border-b border-gray-300 w-full py-3 focus:outline-none focus:border-blue-500 transition-colors"
+            className="border-b border-gray-300 w-full py-3 focus:outline-none focus:border-blue-500 transition-colors text-base pb-3"
           />
 
           <Link to={"/resetpassword-setup"}>
-            <button className="w-full bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-4 rounded-full mt-8 font-medium transition-colors">
+            <button className="w-full bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-4 rounded-full mt-6 font-medium transition-colors text-base active:scale-98">
               Verify
             </button>
           </Link>
         </div>
 
         {/* Back to Sign In */}
-        <div className="flex justify-center items-center gap-1 text-sm text-gray-600">
+        <div className="flex justify-center items-center gap-1 text-sm text-gray-600 text-center">
           Remember your password?
           <Link
             to="/signin"

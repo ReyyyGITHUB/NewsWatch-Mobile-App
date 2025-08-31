@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 export default function Signin() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-12">
-      <div className="w-full max-w-md flex flex-col items-center gap-8 ">
+    <div className="min-h-screen flex items-center justify-center px-4 py-6">
+      <div className="w-full max-w-md flex flex-col items-center gap-6">
         {/* Logo Section */}
-        <div className="flex w-52 justify-center items-center mb-[80px]">
-          <img src="/assets/NewsWatch.png" alt="NewsWatch Logo" />
+        <div className="flex w-44 justify-center items-center mb-12">
+          <img src="/assets/NewsWatch.png" alt="NewsWatch Logo" className="w-full h-auto" />
         </div>
 
         {/* Form Section */}
@@ -16,7 +16,7 @@ export default function Signin() {
             <label className="text-gray-500 text-base">Username</label>
             <input
               type="text"
-              className="border-b border-gray-300 w-full pt-1 text-xl font-normal focus:outline-none focus:border-blue-500 transition-colors"
+              className="border-b border-gray-300 w-full pt-1 text-lg font-normal focus:outline-none focus:border-blue-500 transition-colors pb-2"
             />
           </div>
 
@@ -24,7 +24,7 @@ export default function Signin() {
             <label className="text-gray-500 text-base">Email</label>
             <input
               type="email"
-              className="border-b border-gray-300 w-full pt-1 text-xl font-normal focus:outline-none focus:border-blue-500 transition-colors"
+              className="border-b border-gray-300 w-full pt-1 text-lg font-normal focus:outline-none focus:border-blue-500 transition-colors pb-2"
             />
           </div>
 
@@ -32,7 +32,7 @@ export default function Signin() {
             <label className="text-gray-500 text-base">Password</label>
             <input
               type="password"
-              className="border-b border-gray-300 w-full pt-1 text-xl font-normal focus:outline-none focus:border-blue-500 transition-colors"
+              className="border-b border-gray-300 w-full pt-1 text-lg font-normal focus:outline-none focus:border-blue-500 transition-colors pb-2"
             />
           </div>
 
@@ -50,16 +50,16 @@ export default function Signin() {
         {/* Button Section */}
         <div className="w-full flex flex-col">
           <Link to={"/home"} className="w-full">
-            <button className="w-full h-12 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors">
+            <button className="w-full h-12 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors text-base active:scale-98">
               Sign In
             </button>
           </Link>
 
           {/* Social Login Section */}
-          <div className="text-center text-gray-600 mt-6">Or sign in with</div>
+          <div className="text-center text-gray-600 mt-6 text-sm">Or sign in with</div>
 
-          <div className="flex justify-center gap-4 mt-4">
-            <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors">
+          <div className="flex justify-center gap-3 mt-4">
+            <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors active:scale-95 min-w-[68px]">
               <div className="mb-1">
                 <img
                   src="/assets/google-logo.png"
@@ -70,7 +70,7 @@ export default function Signin() {
               <span className="text-xs text-gray-600">Google</span>
             </div>
 
-            <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors">
+            <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors active:scale-95 min-w-[68px]">
               <div className="mb-1">
                 <img
                   src="/assets/facebook-logo.png"
@@ -81,7 +81,7 @@ export default function Signin() {
               <span className="text-xs text-gray-600">Facebook</span>
             </div>
 
-            <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors">
+            <div className="flex flex-col items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-colors active:scale-95 min-w-[68px]">
               <div className="mb-1">
                 <img
                   src="/assets/twitter-logo.png"
@@ -94,7 +94,7 @@ export default function Signin() {
           </div>
 
           {/* Register Link */}
-          <div className="flex justify-center items-center gap-1 text-sm text-gray-600 mt-6">
+          <div className="flex justify-center items-center gap-1 text-sm text-gray-600 mt-6 text-center">
             Don't have an account?
             <Link
               to="/signup"
