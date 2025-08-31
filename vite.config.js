@@ -5,8 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/NewsWatch-Mobile-App/',
+  base: '/',
   build: {
-    outDir: '/dist',
+    outDir: 'dist',
   },
 })
